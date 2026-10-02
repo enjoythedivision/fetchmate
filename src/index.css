@@ -11,3 +11,21 @@ p, span, a, li, button  {
   font-weight: 700;
   font-size: 2rem;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
