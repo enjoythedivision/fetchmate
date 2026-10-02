@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header'
+import RequestWorkspace from './components/RequestWorkspace'
 import Sidebar from './components/Sidebar'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
      <Header />
      <div className="workspace">
        <Sidebar />
-       <main className="main-content" aria-label="Request workspace" tabIndex={0} />
+       <RequestWorkspace />
      </div>
     </div>
   )
