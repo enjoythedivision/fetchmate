@@ -19,6 +19,8 @@ p, span, a, li, button  {
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  color: #111111;
+  background: #ffffff;
 }
 
 button {
