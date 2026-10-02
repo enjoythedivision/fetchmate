@@ -5,7 +5,7 @@ function RequestWorkspace() {
       aria-label="Request workspace"
       tabIndex={0}>
         <h1>Request Workspace</h1>
-        <form>
+        <form className="request-form">
             <select></select>
             <input></input>
             <button className="btn">Send</button>

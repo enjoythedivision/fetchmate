@@ -25,6 +25,7 @@
 }
 
 .btn {
+  height: 44px;
   padding: 12px 16px;
   border: 1px solid #111111;
   border-radius: 8px;
@@ -48,6 +49,30 @@
 .new-request-button {
   width: 100%;
   margin-top: auto;
+}
+
+.request-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.request-form select,
+.request-form input {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.request-form input {
+  flex: 1;
+  min-width: 0;
+}
+
+.request-form .btn {
+  flex-shrink: 0;
 }
 
 .main-content {
