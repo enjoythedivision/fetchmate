@@ -25,6 +25,9 @@ body {
 
 button {
   font-family: inherit;
+  border-radius: 8px;
+  background: #111111;
+  color: #ffffff;
 }
 
 a {
