@@ -8,7 +8,7 @@ function RequestWorkspace() {
         <form>
             <select></select>
             <input></input>
-            <button className="btn">Go</button>
+            <button className="btn">Send</button>
         </form>
     </main>
   );
