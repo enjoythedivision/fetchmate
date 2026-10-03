@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function RequestWorkspace() {
-
   const [fetchUrl, setFetchUrl] = useState("");
   const [method, setMethod] = useState("GET");
 
@@ -9,10 +8,13 @@ function RequestWorkspace() {
     e.preventDefault();
     const response = await fetch(fetchUrl, {
       method: method,
-    })
+    });
 
-    if (response.ok) { console.log("ok");}
+    if (response.ok) {
+      console.log("ok");
+    }
 
+    console.log(response);
   }
 
   return (
@@ -26,7 +28,11 @@ function RequestWorkspace() {
           <option value="PATCH">PATCH</option>
           <option value="DELETE">DELETE</option>
         </select>
-        <input placeholder="Type your URL here..." value={fetchUrl} onChange={(e) => setFetchUrl(e.target.value)}></input>
+        <input
+          placeholder="Type your URL here..."
+          value={fetchUrl}
+          onChange={(e) => setFetchUrl(e.target.value)}
+        ></input>
         <button className="btn">Send</button>
       </form>
     </main>
