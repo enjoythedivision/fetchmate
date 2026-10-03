@@ -1,8 +1,14 @@
-function RequestWorkspace() {
+import { useState } from "react";
+
+function RequestWorkspace( {handleSubmit} ) {
+
+  const [fetchUrl, setFetchUrl] = useState("");
+  const [method, setMethod] = useState("get");
+
   return (
     <main className="main-content" aria-label="Request workspace" tabIndex={0}>
       <h1>Request Workspace</h1>
-      <form className="request-form">
+      <form className="request-form" onSubmit={handleSubmit}>
         <select>
           <option value="get">GET</option>
           <option value="post">POST</option>
