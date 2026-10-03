@@ -10,7 +10,7 @@ function RequestWorkspace() {
           <option value="patch">PATCH</option>
           <option value="delete">DELETE</option>
         </select>
-        <input></input>
+        <input placeholder="Type your URL here..."></input>
         <button className="btn">Send</button>
       </form>
     </main>
