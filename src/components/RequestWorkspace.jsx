@@ -3,6 +3,7 @@ import { useState } from "react";
 function RequestWorkspace() {
   const [fetchUrl, setFetchUrl] = useState("");
   const [method, setMethod] = useState("GET");
+  const [response, setResponse] = useState(null);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -15,6 +16,7 @@ function RequestWorkspace() {
     }
 
     console.log(response);
+    setResponse(response);
   }
 
   return (
@@ -35,6 +37,7 @@ function RequestWorkspace() {
         ></input>
         <button className="btn">Send</button>
       </form>
+      {response ? (<><h2>Response</h2></>) : (<></>) }
     </main>
   );
 }
